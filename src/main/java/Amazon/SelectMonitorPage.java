@@ -43,7 +43,10 @@ public class SelectMonitorPage extends BasePage{
         return driver.findElement(By.xpath("//h1[@class='a-spacing-mini a-spacing-top-base']"));
     }
     public WebElement closeModalWindow() {
-        return driver.findElement(By.xpath("//input[@data-action-type= \"DISMISS\"]"));
+        return driver.findElement(By.xpath("//a[@id= \"attach-close_sideSheet-link\"]"));
+    }
+    public WebElement getToCart(){
+        return driver.findElement(By.xpath("//span[normalize-space()='Cart']"));
     }
 
 }

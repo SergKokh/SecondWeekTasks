@@ -69,12 +69,16 @@ public class TestsAmazon extends TestInit{
     public void checkClearCart(){
         SelectMonitorPage selectMonitorPage = new SelectMonitorPage(driver);
         goToMonitor();
-        sleep(3);
+        sleep(1);
         selectMonitorPage.choiseMonitor().click();
+        sleep(1);
         selectMonitorPage.addToCart().click();
         sleep(2);
         selectMonitorPage.closeModalWindow().click();
+        sleep(1);
+        selectMonitorPage.getToCart().click();
         selectMonitorPage.deleteProduktFromCart().click();
+        sleep(2);
         Assert.assertTrue(selectMonitorPage.cartIsEmpty().isDisplayed());
     }
 }

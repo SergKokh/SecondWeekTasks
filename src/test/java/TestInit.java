@@ -26,10 +26,10 @@ public class TestInit {
     }
 
 
-    @AfterMethod
-    public void clouseBrawser() {
-        driver.quit();
-    }
+//    @AfterMethod
+//    public void clouseBrawser() {
+//        driver.quit();
+//    }
 
     public void sleep(int seconds) {
         try {
